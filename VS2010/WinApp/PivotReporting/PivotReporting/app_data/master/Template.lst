@@ -1,0 +1,12 @@
+﻿01;01.01;Statistik Kunjungan Pasien;PivotRegistrationCtl;GetvPivotRegistrationList;1;
+02;02.01;Pendapatan Pelayanan - Rawat Inap;PivotInpatientRevenue1Ctl;GetvPivotInpatientRevenueList;1;
+02;02.02;Pendapatan Pelayanan - Rawat Jalan;PivotOutpatientRevenue1Ctl;GetvPivotOutpatientRevenueList;1;
+02;02.03;Pendapatan Pelayanan - Rawat Darurat;PivotEmergencyRevenue1Ctl;GetvPivotEmergencyRevenueList;1;
+02;02.04;Pendapatan Pelayanan - Penunjang Medis;PivotMDRevenue1Ctl;GetvPivotMDRevenueList;1;
+02;02.05;Pendapatan Pelayanan - Laboratorium;PivotLBRevenue1Ctl;GetvPivotLBRevenueList;1;
+03;03.01;Pelayanan Resep Pasien BPJS - Rawat Inap;PivotPrescription1Ctl;GetvBPJSInpatientPrescriptionList;1;
+03;03.02;Pelayanan Resep Pasien BPJS - Rawat Jalan;PivotPrescription2Ctl;GetvBPJSOutpatientPrescriptionList;1;
+03;03.04;Pendapatan Pelayanan - Farmasi;PivotPrescription3Ctl;GetvPivotPrescriptionList;1;
+04;04.01;Penerimaan Pembayaran Pasien - Rawat Inap;PivotInpatientPayment1Ctl;GetvPivotInpatientPaymentList;1;
+04;04.02;Penerimaan Pembayaran Pasien - Rawat Jalan;PivotOutpatientPayment1Ctl;GetvPivotOutpatientPaymentList;1;
+04;04.03;Penerimaan Pembayaran Pasien - Resep Bebas;PivotOutpatientPayment1Ctl;GetvPivotOutpatientPaymentList;1;

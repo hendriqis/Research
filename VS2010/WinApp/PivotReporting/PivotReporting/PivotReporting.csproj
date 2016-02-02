@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{938525E1-5EDC-44E9-B229-BC727000B1F8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PivotReporting</RootNamespace>
+    <AssemblyName>PivotReporting</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>qisicon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v11.1, Version=11.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v11.1.Core, Version=11.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v11.1.Core, Version=11.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v11.1, Version=11.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v11.1, Version=11.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v11.1, Version=11.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="QIS.Data.Core">
+      <HintPath>_libs\QIS.Data.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConfigurationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigurationForm.Designer.cs">
+      <DependentUpon>ConfigurationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Constant.cs" />
+    <Compile Include="Control\BasePivotControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\PivotEmergencyRevenue1Ctl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\PivotEmergencyRevenue1Ctl.Designer.cs">
+      <DependentUpon>PivotEmergencyRevenue1Ctl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\_obsolete\BasePivotRevenueCtl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\_obsolete\BasePivotRevenueCtl.Designer.cs">
+      <DependentUpon>BasePivotRevenueCtl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\PivotInpatientRevenue1Ctl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\PivotInpatientRevenue1Ctl.Designer.cs">
+      <DependentUpon>PivotInpatientRevenue1Ctl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\PivotOutpatientRevenue1Ctl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\PivotOutpatientRevenue1Ctl.Designer.cs">
+      <DependentUpon>PivotOutpatientRevenue1Ctl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\PivotPrescription3Ctl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\PivotPrescription3Ctl.Designer.cs">
+      <DependentUpon>PivotPrescription3Ctl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\PivotLBRevenue1Ctl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\PivotLBRevenue1Ctl.Designer.cs">
+      <DependentUpon>PivotLBRevenue1Ctl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\_obsolete\_PivotInpatientRevenue1Ctl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\_obsolete\_PivotInpatientRevenue1Ctl.Designer.cs">
+      <DependentUpon>_PivotInpatientRevenue1Ctl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\PivotPrescription2Ctl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\PivotPrescription2Ctl.Designer.cs">
+      <DependentUpon>PivotPrescription2Ctl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\PivotPrescription1Ctl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\PivotPrescription1Ctl.Designer.cs">
+      <DependentUpon>PivotPrescription1Ctl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\PivotMDRevenue1Ctl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\PivotMDRevenue1Ctl.Designer.cs">
+      <DependentUpon>PivotMDRevenue1Ctl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\PivotInpatientPayment1Ctl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\PivotInpatientPayment1Ctl.Designer.cs">
+      <DependentUpon>PivotInpatientPayment1Ctl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\PivotOutpatientPayment1Ctl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\PivotOutpatientPayment1Ctl.Designer.cs">
+      <DependentUpon>PivotOutpatientPayment1Ctl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\PivotRevenue1Ctl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\PivotRevenue1Ctl.Designer.cs">
+      <DependentUpon>PivotRevenue1Ctl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\PivotOutpatientTrx1Ctl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\PivotOutpatientTrx1Ctl.Designer.cs">
+      <DependentUpon>PivotOutpatientTrx1Ctl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control\PivotRegistrationCtl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Control\PivotRegistrationCtl.Designer.cs">
+      <DependentUpon>PivotRegistrationCtl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\BusinessLayer.cs" />
+    <Compile Include="Model\CustomObject.cs" />
+    <Compile Include="Model\DataLayer.cs" />
+    <Compile Include="Model\BaseModel.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ConfigurationForm.resx">
+      <DependentUpon>ConfigurationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\PivotEmergencyRevenue1Ctl.resx">
+      <DependentUpon>PivotEmergencyRevenue1Ctl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\_obsolete\BasePivotRevenueCtl.resx">
+      <DependentUpon>BasePivotRevenueCtl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\PivotInpatientRevenue1Ctl.resx">
+      <DependentUpon>PivotInpatientRevenue1Ctl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\PivotOutpatientRevenue1Ctl.resx">
+      <DependentUpon>PivotOutpatientRevenue1Ctl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\PivotPrescription3Ctl.resx">
+      <DependentUpon>PivotPrescription3Ctl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\PivotLBRevenue1Ctl.resx">
+      <DependentUpon>PivotLBRevenue1Ctl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\PivotPrescription2Ctl.resx">
+      <DependentUpon>PivotPrescription2Ctl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\PivotPrescription1Ctl.resx">
+      <DependentUpon>PivotPrescription1Ctl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\PivotMDRevenue1Ctl.resx">
+      <DependentUpon>PivotMDRevenue1Ctl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\PivotInpatientPayment1Ctl.resx">
+      <DependentUpon>PivotInpatientPayment1Ctl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\PivotOutpatientPayment1Ctl.resx">
+      <DependentUpon>PivotOutpatientPayment1Ctl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\PivotRevenue1Ctl.resx">
+      <DependentUpon>PivotRevenue1Ctl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\PivotOutpatientTrx1Ctl.resx">
+      <DependentUpon>PivotOutpatientTrx1Ctl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control\PivotRegistrationCtl.resx">
+      <DependentUpon>PivotRegistrationCtl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config" />
+    <Content Include="app_data\master\Template.lst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="app_data\Template.pvt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app_data\layout\PivotMDRevenue1Ctl.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="app_data\layout\PivotInpatientPayment1Ctl.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="app_data\layout\PivotOutpatientTrx1.xml" />
+    <Content Include="app_data\layout\PivotRevenue1Ctl.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="app_data\layout\_base\PivotRevenue1Ctl.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="app_data\master\TemplateGroup.lst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="qisicon.ico" />
+    <Content Include="_assets\refresh.png" />
+    <Content Include="_libs\QIS.Data.Core.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="app_data\cache\" />
+    <Folder Include="app_data\_export\" />
+    <Folder Include="bin\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PivotReporting.Model\PivotReporting.Model.csproj">
+      <Project>{F097C5B0-B834-404E-862E-7A4048156155}</Project>
+      <Name>PivotReporting.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,6 @@
+﻿PivotOutpatientPayment1Ctl|Penerimaan Pembayaran Pasien - RAWAT JALAN|GetvPivotOutpatientPaymentList|1
+PivotInpatientPayment1Ctl|Penerimaan Pembayaran Pasien - RAWAT INAP|GetvPivotInpatientPaymentList|1
+PivotRevenue1Ctl|Pendapatan Pelayanan|GetvPivotRevenueList|1
+PivotMDRevenue1Ctl|Pendapatan Pelayanan Penunjang Medis|GetvPivotMDRevenueList|1
+PivotOutpatientTrx1Ctl|Pendapatan Pelayanan Rawat Jalan|GetvPivotOutpatientTrxList|0
+PivotRegistrationCtl|Statistik Kunjungan Pasien|GetvPivotRegistrationList|1
